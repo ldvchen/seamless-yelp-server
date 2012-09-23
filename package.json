@@ -1,11 +1,13 @@
 {
-  "name": "node-example",
+  "name": "seamless-yelp",
   "version": "0.0.1",
   "dependencies": {
     "express": "2.5.0",
-    "yelp": ">=0.1.1"
+    "yelp": ">=0.1.1",
+    "coffee-script": "*"
   },
   "engines": {
     "node": "0.6.x"
-  }
+  },
+  "main": "web.coffee"
 }
