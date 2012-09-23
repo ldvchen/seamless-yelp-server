@@ -2,7 +2,8 @@
   "name": "node-example",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.5.0"
+    "express": "2.5.0",
+    "yelp": ">=0.1.1"
   },
   "engines": {
     "node": "0.6.x"
