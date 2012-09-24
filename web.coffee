@@ -47,6 +47,7 @@ app.get '/', (request, response) ->
   yelp.search params, (error, data) ->
 
     if error
+      console.log error
       response.send(errorify error)
       return
 
