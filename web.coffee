@@ -20,7 +20,8 @@ lowercaseAndRemoveParens = (string) ->
 # Returns whether this is a likely match based on levenshtein, after spaces
 # and punctuation are removed.
 isLikelyMatch = (a, b) ->
-  clean = (str) -> lowercaseAndRemoveParens(str).replace(/[- '*]*/gim, "")
+  clean = (str) ->
+    lowercaseAndRemoveParens(str).replace(/[- '*]*/gim, "").replace(/restaurant/g, "").trim()
   levenshtein.getEditDistance(clean(a), clean(b)) < match_threshold
 
 
